@@ -1,18 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
 
@@ -27,19 +12,18 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-check-input {
+  cursor: pointer;
 }
-
+body {
+  background-color: #5880cf !important;
+}
+#dark body {
+  background-color: #000000 !important;
+}
 #light {
   transition: 0.5s;
-  height: 1000px;
+  height: max-content;
   background-color: #5880cf;
 }
 #light .navbar {
@@ -63,9 +47,17 @@
 
 #dark {
   transition: 0.7s;
-  height: 1000px;
+  height: 1300px;
 
   background-color: black;
+}
+#dark .accordion-body {
+  color: white;
+  background-color: #1b1c1f;
+}
+#dark .accordion-button {
+  background-color: #1b1c1f;
+  color: white;
 }
 #dark .navbar {
   color: white !important;
